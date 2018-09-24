@@ -29,7 +29,7 @@ var dias=['lunes','martes','miercoles','jueves','viernes','sabado','domingo'];
 
 for (var i =0; i<7; i++){
 	console.log(dias[i]);
-}*/
+}
 
 function suma(numero1,numero2){
       var resultado=numero1+numero2;
@@ -37,4 +37,12 @@ function suma(numero1,numero2){
 }
 
 var res=suma(88,55);
-console.log(res)
+console.log(res);*/
+
+function iva(numero){
+	var costo=numero*19/100;
+	return costo;
+}
+
+var ivar=iva(9000);
+console.log('El iva es →   ', ivar);
