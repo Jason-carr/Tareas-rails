@@ -1,0 +1,12 @@
+<%= from_for(@tareas) do |f|%>
+	<div class="form-group">
+		<label>Titulo</label>
+		<%=f.text_field :titulo, class:"form-control"%>
+		<!--<input type="text" name="titulo" class="form-control">-->
+	</div>
+	<div class="form-group0">
+		<label>Descripcion</label>
+		<%= f.text_area :descripcion, class:"form-control" %>
+	</div>
+	<%= f.submit "Crear", class:"btn btn-dark"%>
+<%end%>
