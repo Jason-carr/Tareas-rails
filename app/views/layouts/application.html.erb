@@ -9,6 +9,30 @@
   </head>
 
   <body>
+  	<div class="container">
+  	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="#">TAREAS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to "Inicio", {controller: "bienvenido", action: "index"}, class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Tareas", {controller: "tareas", action: "index"}, class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%=link_to "crear Tarea", {controller: "tareas", action: "new"}, class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Contactenos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     <%= yield %>
+</div>
   </body>
 </html>
