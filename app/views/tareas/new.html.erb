@@ -1,16 +1,2 @@
-<%@tarea.errors.full_messages.each do |mensaje|%>
-<p class="alert alert-danger"><%=mensaje%></p>
-<%end%>
 <h1> Crea una Tarea Nueva</h1>
-<%=form_for(@tarea) do |f|%>
-	<div class="form-group">
-		<label>Titulo</label>
-		<%=f.text_field :titulo, class:"form-control", :required => true%>
-		<!--<input type="text" name="titulo" class="form-control">-->
-	</div>
-	<div class="form-group">
-		<label>Descripcion</label>
-		<%= f.text_area :descripcion, class:"form-control", :required => true %>
-	</div>
-	<%= f.submit "Crear", class:"btn btn-dark"%>
-<%end%>
+<%= render "formulario", boton: "Crear", color_boton: "primary	"%>
